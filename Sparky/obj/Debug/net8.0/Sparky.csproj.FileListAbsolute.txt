@@ -9,3 +9,4 @@
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/refint/Sparky.dll
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.pdb
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/ref/Sparky.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.sourcelink.json

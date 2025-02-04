@@ -111,3 +111,4 @@
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyMSTest/obj/Debug/net8.0/SparkyMSTest.pdb
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyMSTest/obj/Debug/net8.0/SparkyMSTest.genruntimeconfig.cache
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyMSTest/obj/Debug/net8.0/ref/SparkyMSTest.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyMSTest/obj/Debug/net8.0/SparkyMSTest.sourcelink.json

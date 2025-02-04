@@ -19,10 +19,11 @@ namespace Sparky
         {
             if(Balance>=amount)
             {
+                _logBook.LogToDb("Withdrawal Amount: " + amount.ToString());
                 Balance-=amount;
-                return true;
+                return _logBook.LogBalanceAfterWithdrawal(Balance);
             }
-            return false;
+            return _logBook.LogBalanceAfterWithdrawal(Balance-amount);
         }
         public int GetBalance()
         {

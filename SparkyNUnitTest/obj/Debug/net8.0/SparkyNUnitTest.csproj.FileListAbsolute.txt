@@ -105,3 +105,4 @@
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyNUnitTest/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyNUnitTest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
 /Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyNUnitTest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/SparkyNUnitTest/obj/Debug/net8.0/SparkyNUnitTest.sourcelink.json
