@@ -1,0 +1,11 @@
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/bin/Debug/net8.0/Sparky.deps.json
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/bin/Debug/net8.0/Sparky.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/bin/Debug/net8.0/Sparky.pdb
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.GeneratedMSBuildEditorConfig.editorconfig
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.AssemblyInfoInputs.cache
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.AssemblyInfo.cs
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.csproj.CoreCompileInputs.cache
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/refint/Sparky.dll
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/Sparky.pdb
+/Users/suvechharoy/Projects/dotnetProjects/Sparky/Sparky/obj/Debug/net8.0/ref/Sparky.dll
