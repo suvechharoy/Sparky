@@ -12,7 +12,10 @@ namespace Sparky
         public bool Deposit(int amount)
         {
             _logBook.Message("Deposit method invoked"); 
-            Balance+=amount;
+            _logBook.Message("Test Invoked");
+            _logBook.LogSeverity = 101;// set property
+            var temp = _logBook.LogSeverity;// get property
+            Balance+=amount;        
             return true;
         }
         public bool Withdraw(int amount)

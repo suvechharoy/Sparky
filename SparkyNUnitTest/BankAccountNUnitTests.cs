@@ -103,6 +103,35 @@ namespace Sparky
 
             Assert.That(logMock.Object.LogSeverity, Is.EqualTo(10));
             Assert.That(logMock.Object.LogType, Is.EqualTo("error"));
+
+            //callbacks
+            string tempLog = "Hello, ";
+            logMock.Setup(x=>x.LogToDb(It.IsAny<string>()))
+            .Returns(true).Callback((string str) => tempLog+=str);
+            logMock.Object.LogToDb("Suvechha");
+            Assert.That(tempLog, Is.EqualTo("Hello, Suvechha"));
+
+            //callbacks
+            int c = 5;
+            logMock.Setup(x=>x.LogToDb(It.IsAny<string>()))
+            .Returns(true).Callback(() => c++);
+            logMock.Object.LogToDb("Suvechha");
+            logMock.Object.LogToDb("Suvechha");//calling method twice, will increase counter by 2
+            Assert.That(c, Is.EqualTo(7));
+        }
+        [Test]
+        public void BankLogDummy_VerifyDemo()
+        {
+            var logMock = new Mock<ILogBook>();
+            BankAccount account = new BankAccount(logMock.Object);
+            account.Deposit(100);
+            Assert.That(account.GetBalance, Is.EqualTo(100));
+
+            //verify if the method was called
+            logMock.Verify(x=>x.Message(It.IsAny<string>()), Times.Exactly(2));
+            logMock.Verify(x=>x.Message("Test Invoked"), Times.AtLeastOnce);
+            logMock.VerifySet(x=>x.LogSeverity = 101, Times.Once);
+            logMock.VerifyGet(x=>x.LogSeverity, Times.Once);
         }
     }
 }
