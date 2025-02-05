@@ -59,5 +59,50 @@ namespace Sparky
             var res = bankAccount.Withdraw(withdraw);
             Assert.IsFalse(res);
         }
+        [Test]
+        public void BankLogDummy_LogMockString_ReturnTrue()
+        {
+            var logMock = new Mock<ILogBook>();
+            string desiredOutput = "hello";
+
+            logMock.Setup(x=>x.MessageWithReturnStr(It.IsAny<string>())).Returns((string str)=>str.ToLower());
+            
+            Assert.That(logMock.Object.MessageWithReturnStr("heLLo"), Is.EqualTo(desiredOutput));
+        }
+        [Test]
+        public void BankLogDummy_LogMockStringOutputStr_ReturnTrue()
+        {
+            var logMock = new Mock<ILogBook>();
+            string desiredOutput = "hello";
+
+            logMock.Setup(x=>x.LogWithOutputResult(It.IsAny<string>(), out desiredOutput)).Returns(true);
+            string result = "";
+            Assert.IsTrue(logMock.Object.LogWithOutputResult("Suvechha", out result));
+            
+            Assert.That(result, Is.EqualTo(desiredOutput));
+        }
+        [Test]
+        public void BankLogDummy_LogRefChecker_ReturnTrue()
+        {
+            var logMock = new Mock<ILogBook>();
+            Customer customer = new Customer();
+            Customer inactiveCustomer = new Customer();
+
+            logMock.Setup(x=>x.LogWithRefObject(ref customer)).Returns(true);
+
+            Assert.IsTrue(logMock.Object.LogWithRefObject(ref customer));
+        }
+
+        [Test]
+        public void BankLogDummy_SetAndGetLogTypeAndSeverityMock_MockTest()
+        {
+            var logMock = new Mock<ILogBook>();
+            logMock.SetupAllProperties();
+            logMock.Setup(x=>x.LogSeverity).Returns(10);
+            logMock.Setup(x=>x.LogType).Returns("error");
+
+            Assert.That(logMock.Object.LogSeverity, Is.EqualTo(10));
+            Assert.That(logMock.Object.LogType, Is.EqualTo("error"));
+        }
     }
 }
