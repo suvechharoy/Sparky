@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkyMSTest", "SparkyMSTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkyNUnitTest", "SparkyNUnitTest\SparkyNUnitTest.csproj", "{3A7EAF9F-119C-4024-986F-6FDF59EBC4BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkyXUnit", "SparkyXUnit\SparkyXUnit.csproj", "{DA0454DC-6BD4-4953-91F0-72991ADD09A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3A7EAF9F-119C-4024-986F-6FDF59EBC4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A7EAF9F-119C-4024-986F-6FDF59EBC4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A7EAF9F-119C-4024-986F-6FDF59EBC4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0454DC-6BD4-4953-91F0-72991ADD09A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0454DC-6BD4-4953-91F0-72991ADD09A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0454DC-6BD4-4953-91F0-72991ADD09A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0454DC-6BD4-4953-91F0-72991ADD09A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
